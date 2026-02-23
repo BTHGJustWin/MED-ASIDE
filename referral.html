@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer a Case | MED ASIDE - Medicare Set-Aside Case Referral</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <meta name="description"
+        content="Attorneys and insurance professionals: submit a Medicare Set-Aside case referral to MED ASIDE for MSA administration, lien resolution, or settlement consulting. Fast turnaround and confidential handling.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.medaside.com/referral">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Refer a Case | MED ASIDE - Medicare Set-Aside Case Referral">
+    <meta property="og:description"
+        content="Attorneys and insurance professionals: submit a Medicare Set-Aside case referral to MED ASIDE. Fast turnaround, confidential handling, and expert MSA administration.">
+    <meta property="og:url" content="https://www.medaside.com/referral">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MED ASIDE">
+    <meta property="og:image" content="https://www.medaside.com/assets/images/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Refer a Case | MED ASIDE - Medicare Set-Aside Case Referral">
+    <meta name="twitter:description"
+        content="Attorneys and insurance professionals: submit a Medicare Set-Aside case referral to MED ASIDE. Fast turnaround, confidential handling, and expert MSA administration.">
+    <meta name="twitter:image" content="https://www.medaside.com/assets/images/logo.png">
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.medaside.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Refer a Case",
+                "item": "https://www.medaside.com/referral"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .referral-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+            padding: 5rem 0;
+        }
+
+        .referral-form-box {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+        }
+
+        .referral-form-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .referral-form-box>p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .form-section-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--glass-border);
+            margin-top: 2rem;
+        }
+
+        .form-section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .referral-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .referral-info-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 1.5rem;
+        }
+
+        .referral-info-card h4 {
+            font-size: 1rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+        }
+
+        .referral-info-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .referral-info-card ul {
+            margin-top: 0.5rem;
+        }
+
+        .referral-info-card li {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .referral-info-card li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+        }
+
+        .file-upload {
+            border: 2px dashed var(--glass-border);
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .file-upload:hover {
+            border-color: var(--accent-gold);
+            background: rgba(212, 175, 55, 0.03);
+        }
+
+        .file-upload i {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .file-upload p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .referral-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:8189468800"><i class="fas fa-phone"></i> (818) 946-8800</a>
+                <a href="mailto:info@medaside.com"><i class="fas fa-envelope"></i> info@medaside.com</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="portal.html" class="portal-btn"><i class="fas fa-lock"></i> Client Portal</a>
+                <a href="portal.html">Attorney Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="MED ASIDE Logo">
+                    <span class="logo-text">MED ASIDE<small>Medicare Set-Aside Experts</small></span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu"><i
+                        class="fas fa-bars"></i></button>
+                <div class="main-nav" id="mainNav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="services.html">Services</a>
+                            <div class="dropdown">
+                                <a href="services.html#msa">MSA Administration</a>
+                                <a href="services.html#professional">Professional Administration</a>
+                                <a href="services.html#lien">Lien Resolution</a>
+                                <a href="services.html#consulting">Settlement Consulting</a>
+                                <a href="services.html#trust">Trust Services</a>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Resources</a>
+                            <div class="dropdown">
+                                <a href="#">Industry News</a>
+                                <a href="#">Settlement Guides</a>
+                                <a href="#">FAQ</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="referral.html" class="btn btn-referral btn-small"><span>Refer a Case</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Refer a Case</span>
+            </div>
+            <h1>Refer a <span class="text-gold">Case</span></h1>
+            <p>Attorneys and insurance professionals: submit a referral and our team will begin working on your case
+                immediately.</p>
+        </div>
+    </section>
+
+    <!-- Referral Content -->
+    <section>
+        <div class="container">
+            <div class="referral-layout">
+                <!-- Main Form -->
+                <div class="referral-form-box">
+                    <h3>Case <span class="text-gold">Referral Form</span></h3>
+                    <p>Complete the form below to begin the referral process. All fields marked with * are required.
+                        Your information is kept strictly confidential.</p>
+
+                    <form>
+                        <div class="form-section-title">Referring Party Information</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your Name *</label>
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Firm / Company *</label>
+                                <input type="text" class="form-control" placeholder="Law Firm or Organization"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" class="form-control" placeholder="you@firm.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone *</label>
+                                <input type="tel" class="form-control" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Role *</label>
+                            <select class="form-control" required>
+                                <option value="">Select Role</option>
+                                <option>Plaintiff Attorney</option>
+                                <option>Defense Attorney</option>
+                                <option>Claims Adjuster</option>
+                                <option>Nurse Case Manager</option>
+                                <option>Mediator</option>
+                                <option>Insurance Professional</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section-title">Claimant / Case Information</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Claimant Name *</label>
+                                <input type="text" class="form-control" placeholder="Full Legal Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Date of Birth</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date of Incident</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>State of Jurisdiction *</label>
+                                <select class="form-control" required>
+                                    <option value="">Select State</option>
+                                    <option>California</option>
+                                    <option>Texas</option>
+                                    <option>Florida</option>
+                                    <option>New York</option>
+                                    <option>Other (specify in notes)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Case Type *</label>
+                            <select class="form-control" required>
+                                <option value="">Select Case Type</option>
+                                <option>Workers' Compensation</option>
+                                <option>Liability / Personal Injury</option>
+                                <option>Auto Accident</option>
+                                <option>Medical Malpractice</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section-title">Services Requested</div>
+                        <div class="form-group">
+                            <label>What service(s) do you need? *</label>
+                            <select class="form-control" required>
+                                <option value="">Select Service</option>
+                                <option>MSA Administration</option>
+                                <option>Professional Administration</option>
+                                <option>Lien Resolution</option>
+                                <option>Settlement Consulting</option>
+                                <option>Trust Services</option>
+                                <option>Multiple Services (describe below)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Settlement Amount (if known)</label>
+                            <input type="text" class="form-control" placeholder="$">
+                        </div>
+                        <div class="form-group">
+                            <label>Insurance Carrier</label>
+                            <input type="text" class="form-control" placeholder="Name of Carrier">
+                        </div>
+
+                        <div class="form-section-title">Additional Details</div>
+                        <div class="form-group">
+                            <label>Notes / Case Summary</label>
+                            <textarea class="form-control" rows="4"
+                                placeholder="Please provide any relevant case details, special circumstances, or additional notes..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Case Documents (optional)</label>
+                            <div class="file-upload">
+                                <i class="fas fa-cloud-arrow-up"></i>
+                                <p>Drag & drop files or <span class="text-gold"
+                                        style="cursor:pointer;">browse</span><br>PDF, DOC, or DOCX (max 10MB)</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width:100%;justify-content:center;margin-top:1rem;"><span><i
+                                    class="fas fa-paper-plane"></i> Submit Referral</span></button>
+                    </form>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="referral-sidebar">
+                    <div class="referral-info-card">
+                        <h4><i class="fas fa-bolt"></i> Fast Turnaround</h4>
+                        <p>We acknowledge all referrals within 24 hours and begin work on your case immediately.</p>
+                    </div>
+                    <div class="referral-info-card">
+                        <h4><i class="fas fa-shield-halved"></i> Confidential</h4>
+                        <p>All case information is handled with strict confidentiality and data security protocols.</p>
+                    </div>
+                    <div class="referral-info-card">
+                        <h4><i class="fas fa-list-check"></i> What Happens Next</h4>
+                        <ul>
+                            <li>We review your submission</li>
+                            <li>A specialist contacts you within 24 hrs</li>
+                            <li>We provide a case assessment</li>
+                            <li>Engagement letter and setup</li>
+                            <li>Active case management begins</li>
+                        </ul>
+                    </div>
+                    <div class="referral-info-card">
+                        <h4><i class="fas fa-phone"></i> Prefer to Call?</h4>
+                        <p>Reach us directly at <a href="tel:8189468800"
+                                style="color:var(--gold);font-weight:600;">(818) 946-8800</a> or email <a
+                                href="mailto:referrals@medaside.com"
+                                style="color:var(--gold);">referrals@medaside.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom:1.5rem;">
+                        <img src="assets/images/logo.png" alt="MED ASIDE"
+                            style="height:45px;width:45px;border-radius:4px;">
+                        <span class="logo-text">MED ASIDE<small>Medicare Set-Aside Experts</small></span>
+                    </a>
+                    <p>Setting the standard in Medicare Set-Aside administration, compliance, and settlement services.
+                        Serving clients nationwide from Van Nuys, California.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="referral.html">Refer a Case</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#msa">MSA Administration</a></li>
+                        <li><a href="services.html#professional">Professional Admin</a></li>
+                        <li><a href="services.html#lien">Lien Resolution</a></li>
+                        <li><a href="services.html#consulting">Settlement Consulting</a></li>
+                        <li><a href="services.html#trust">Trust Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> 6320 Van Nuys Blvd. #509<br>Van
+                        Nuys, CA 91401</p>
+                    <p><span class="icon"><i class="fas fa-phone"></i></span> (818) 946-8800</p>
+                    <p><span class="icon"><i class="fas fa-fax"></i></span> (818) 996-1440</p>
+                    <p><span class="icon"><i class="fas fa-envelope"></i></span> info@medaside.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MED ASIDE. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            document.getElementById('mainNav').classList.toggle('open');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+
+</body>
+
+</html>

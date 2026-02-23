@@ -1,0 +1,10 @@
+# MED ASIDE - robots.txt
+# https://www.medaside.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /portal.html
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://www.medaside.com/sitemap.xml
